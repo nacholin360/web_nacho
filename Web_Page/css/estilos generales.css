@@ -74,6 +74,8 @@ aside {
     float: left;
     position: relative;
     top: -30px;
+    margin: 20px;
+    padding: 25px;
 }
 
 footer {
