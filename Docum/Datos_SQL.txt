@@ -1,0 +1,19 @@
+bd usuario sql password 1234
+
+mysql -u $MYSQL_USER -p$MYSQL_PASSWORD -h $HOSTNAME $MYSQL_DATABASE;
+
+GRANT ALL ON sampledb.* TO $MYSQL_USER;
+
+mysql> SHOW TABLES;
+
+mysql> CREATE TABLE usuarios (name VARCHAR(20), apodo VARCHAR(20), sexo CHAR(1), cumple DATE);
+
+mysql> DESCRIBE usuarios;
+
+LOAD DATA LOCAL INFILE '/path/usuarios.txt' INTO TABLE usuarios;
+
+INSERT INTO usuarios VALUES ('Ignacio','Nacho','h','2006-03-22');
+
+INSERT INTO usuarios VALUES ('Federico','Peta','h','1971-03-16');
+
+INSERT INTO usuarios VALUES ('Matias','Mati','h','2008-10-20');
