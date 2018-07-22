@@ -69,13 +69,14 @@ header nav ul li a:hover {
 }
 
 aside {
-    width: 30%;
+    width: 25%;
     background: #ff8000;
     float: left;
     position: relative;
     top: -30px;
     margin: 20px;
     padding: 25px;
+    max-width: 30%;
 }
 
 footer {
